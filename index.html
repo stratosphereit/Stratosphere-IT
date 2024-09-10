@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stratosphere IT offers top-tier IT solutions for collection agencies, specializing in Cloud Solutions, Cybersecurity, Web Development, and Digital Transformation.">
+    <meta name="keywords" content="collection agency IT services, cloud solutions, cybersecurity, web development, digital transformation, IT support, SEO optimized">
+    <meta name="author" content="Stratosphere IT">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.yourcompany.com">
+    <title>IT Services for Collection Agencies | Stratosphere IT</title>
+
+    <!-- Social Media SEO -->
+    <meta property="og:title" content="IT Services for Collection Agencies | Stratosphere IT">
+    <meta property="og:description" content="Stratosphere IT provides comprehensive IT services for collection agencies including Cloud Solutions, Cybersecurity, Web Development, and more.">
+    <meta property="og:image" content="path-to-your-image.jpg">
+    <meta property="og:url" content="https://www.yourcompany.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background-image.jpg') center/cover no-repeat;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: rgba(28, 28, 28, 0.8);
+            color: #f4f4f4;
+            padding: 1.5rem;
+            text-align: center;
+            position: relative;
+            animation: fadeInDown 1s ease-out;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        header .contact-info {
+            text-align: right;
+        }
+
+        header .contact-info p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        header .contact-info p a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        header .contact-info p a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 10px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 0.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #f4f4f4;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+
+        .marquee {
+            background-color: #ffc107;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+            color: #1c1c1c;
+            animation: fadeIn 1s ease-in 1s forwards;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') center/cover no-repeat;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ffc107;
+            color: #1c1c1c;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e0a800;
+            transform: translateY(-5px);
+        }
+
+        /* Services Section */
+        .our-services-section {
+            padding: 50px;
+            text-align: center;
+            background: linear-gradient(135deg, #007bff, #6dd5ed);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .our-services-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .service-wrapper {
+            display: flex;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .services-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 20px 0;
+            gap: 20px;
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .service-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            width: 220px;
+            text-align: center;
+            flex: 0 0 auto;
+            display: inline-block;
+        }
+
+        .service-box:hover {
+            transform: scale(1.05);
+        }
+
+        .service-box img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .service-box h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .service-box p {
+            font-size: 0.85rem;
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        footer {
+            background-color: rgba(28, 28, 28, 0.8);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            position: relative;
+        }
+
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .social-icons {
+            margin-top: 1rem;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+            color: #ffc107;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #e0a800;
+        }
+
+        footer .subscribe {
+            margin: 20px 0;
+        }
+
+        footer input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+        }
+
+        footer button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #ffc107;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer button[type="submit"]:hover {
+            background-color: #e0a800;
+        }
+
+        .contact-section {
+            background: #333;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 50px 0;
+            position: relative;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffc107;
+        }
+
+        .contact-section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-section a {
+            color: #ffc107;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Stratosphere IT</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact-info">
+            <p>📞 <a href="tel:+7827451226">7827451226</a></p>
+            <p>✉️ <a href="mailto:stratosphereit05@gmail.com">stratosphereit05@gmail.com</a></p>
+        </div>
+    </header>
+
+    <div class="marquee">
+        <p>Welcome to Stratosphere IT - Your Trusted Partner in Innovative IT Solutions!</p>
+    </div>
+
+    <section class="hero">
+        <h2>Innovative IT Solutions for Collection Agencies</h2>
+        <p>We specialize in delivering high-quality IT services tailored for collection agencies. Let's transform your business with our expertise.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="services" class="our-services-section">
+        <h2>Our Services</h2>
+        <div class="service-wrapper">
+            <div class="services-container">
+                <div class="service-box">
+                    <img src="cloud-icon.png" alt="Cloud Solutions">
+                    <h3>Cloud Solutions</h3>
+                    <p>Flexible and scalable cloud services <br> to optimize your operations.</p>
+                </div>
+                <div class="service-box">
+                    <img src="cybersecurity-icon.png" alt="Cybersecurity">
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your data with advanced <br> cybersecurity solutions.</p>
+                </div>
+                <div class="service-box">
+                    <img src="web-development-icon.png" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>Custom website development to <br> enhance your online presence.</p>
+                </div>
+                <div class="service-box">
+                    <img src="digital-transformation-icon.png" alt="Digital Transformation">
+                    <h3>Digital Transformation</h3>
+                    <p>Transform your business processes <br> with cutting-edge technology.</p>
+                </div>
+                <div class="service-box">
+                    <img src="support-icon.png" alt="IT Support">
+                    <h3>IT Support</h3>
+                    <p>Reliable IT support to keep your <br> systems running smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us and we’ll be happy to assist you.</p>
+        <p>📞 <a href="tel:+7827451226">7827451226</a> <br> <a href="tel:+8406831511">8406831511</a></p>
+        <p>✉️ <a href="mailto:stratosphereit05@gmail.com">stratosphereit05@gmail.com</a></p>
+        <p>📝 <a href="https://forms.gle/1ZCGLUF7pxZaNEzs5" target="_blank">Fill out our contact form</a></p>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <!-- <div class="subscribe">
+            <p>Subscribe to our newsletter</p>
+            <form action="#">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div> -->
+        <p>&copy; 2024 Stratosphere IT. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
